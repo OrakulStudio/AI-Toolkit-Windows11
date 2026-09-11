@@ -1,4 +1,5 @@
 # AI-Toolkit - Viking Engine Fork
+[![DOI](https://zenodo.org/badge/1262383269.svg)](https://doi.org/10.5281/zenodo.22700107)
 
 **High-performance LoRA training for Flux2 on RTX 4090**  
 *Server-class speed on consumer hardware*
