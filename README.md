@@ -314,12 +314,26 @@ All original commits preserved. Author credited. The original README can be foun
 
 ```
 
+## Supported Models
+**Image**
+
+- [FLUX.1](https://huggingface.co/black-forest-labs/FLUX.1-dev)
+- 🐙 **This fork:** [github.com/OrakulStudio](https://github.com/OrakulStudio)
+- 🤗 [huggingface.co/OrakulStorm](https://huggingface.co/OrakulStorm)
+- 🎨 [civitai.com/user/orakul_storm](https://civitai.com/user/ORAKUL_STUDIO)
+
+```
+
+
+
+```
+
 ## Links
 
 - 🐙 **Original:** [ostris/ai-toolkit](https://github.com/ostris/ai-toolkit)
 - 🐙 **This fork:** [github.com/OrakulStudio](https://github.com/OrakulStudio)
 - 🤗 [huggingface.co/OrakulStorm](https://huggingface.co/OrakulStorm)
-- 🎨 [civitai.com/user/orakul_storm](https://civitai.com/user/ORAKUL_STUDIO)
+- 🎨 [civitai.com/user/orakul_studio](https://civitai.com/user/ORAKUL_STUDIO)
 
 ```
 
