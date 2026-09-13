@@ -319,8 +319,8 @@ All original commits preserved. Author credited. The original README can be foun
 
 - [black-forest-labs/FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev) **(FLUX.1)**
 - [black-forest-labs/FLUX.2-dev](https://huggingface.co/black-forest-labs/FLUX.2-dev) **(FLUX.2)**
-- 🤗 [huggingface.co/OrakulStorm](https://huggingface.co/OrakulStorm)
-- 🎨 [civitai.com/user/orakul_storm](https://civitai.com/user/ORAKUL_STUDIO)
+- [stabilityai/stable-diffusion-xl-base-1.0](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0) **(SDXL)**
+- [HiDream-ai/HiDream-I1-Full](https://huggingface.co/HiDream-ai/HiDream-I1-Full) **(HiDream I1)**
 
 
 
