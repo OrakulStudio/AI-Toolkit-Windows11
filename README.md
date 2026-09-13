@@ -28,6 +28,8 @@ Linux is great for servers and clean code. But when you have two hours of daylig
 
 So yes, my code is written for Windows. And it runs. If anyone wants to port the Viking Engine to Linux, they're welcome, I'm not opposed. But for now, I'll stick with where it's less of a hassle and more rewarding.
 
+⚠️ Nevertheless, Linux support for the specialized Viking Engine is under active development.
+
 *Orakul Studio - Chernihiv, Ukraine 🇺🇦*
 
 ---
