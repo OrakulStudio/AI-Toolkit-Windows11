@@ -1,7 +1,13 @@
 # AI-Toolkit - Viking Engine 
 [![DOI](https://zenodo.org/badge/1262383269.svg)](https://doi.org/10.5281/zenodo.22700107)
 
-**High-performance LoRA training for Flux2 on RTX 4090**  
+**High-performance LoRA training on RTX 4090** 
+
+# AI-Toolkit (Windows 11 & Viking Engine Edition)
+
+**AI-Toolkit (Windows 11)** is a user-friendly, high-performance toolkit designed for training diffusion models on consumer-grade hardware. 
+
+Built upon the open-source AI-Toolkit framework, this version has been extensively re-engineered to deliver server-grade training speeds and exceptional VRAM efficiency within the Windows 11 environment.
 *Server-class speed on consumer hardware*
 
 > Based on [ostris/ai-toolkit](https://github.com/ostris/ai-toolkit) - the original author's work is the foundation of everything here. All original commits preserved.
