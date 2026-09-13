@@ -322,12 +322,8 @@ All original commits preserved. Author credited. The original README can be foun
 - [stabilityai/stable-diffusion-xl-base-1.0](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0) **(SDXL)**
 - [HiDream-ai/HiDream-I1-Full](https://huggingface.co/HiDream-ai/HiDream-I1-Full) **(HiDream I1)**
 
-
-
-
 ---
 
----
 ## Links
 
 - 🐙 **Original:** [ostris/ai-toolkit](https://github.com/ostris/ai-toolkit)
