@@ -312,7 +312,7 @@ ostris/ai-toolkit is the most widely used open-source LoRA training framework. T
 All original commits preserved. Author credited. The original README can be found in README_OSTRIS.md.
 
 
----
+```
 
 ## Links
 
@@ -321,7 +321,7 @@ All original commits preserved. Author credited. The original README can be foun
 - 🤗 [huggingface.co/OrakulStorm](https://huggingface.co/OrakulStorm)
 - 🎨 [civitai.com/user/orakul_storm](https://civitai.com/user/orakul_storm)
 
----
+```
 
 
 *The smell of the iron is stable. 🦊⚡*
