@@ -317,7 +317,7 @@ All original commits preserved. Author credited. The original README can be foun
 ## Supported Models
 **Image**
 
-- https://huggingface.co/black-forest-labs/FLUX.1-dev **(FLUX.1)**
+- [https://huggingface.co/black-forest-labs/FLUX.1-dev](black-forest-labs/FLUX.1-dev) **(FLUX.1)**
 - https://huggingface.co/black-forest-labs/FLUX.2-dev **(FLUX.2)**
 - 🤗 [huggingface.co/OrakulStorm](https://huggingface.co/OrakulStorm)
 - 🎨 [civitai.com/user/orakul_storm](https://civitai.com/user/ORAKUL_STUDIO)
