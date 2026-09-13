@@ -323,7 +323,14 @@ All original commits preserved. Author credited. The original README can be foun
 - [HiDream-ai/HiDream-I1-Full](https://huggingface.co/HiDream-ai/HiDream-I1-Full) **(HiDream I1)**
 - [Qwen/Qwen-Image](https://huggingface.co/Qwen/Qwen-Image) **(Qwen-Image)**
 - [Tongyi-MAI/Z-Image](https://huggingface.co/Tongyi-MAI/Z-Image) **(Z-Image)**
+- [lodestones/Chroma1-Base](https://huggingface.co/lodestones/Chroma1-Base/tree/main/transformer) **(Chroma)**
+
+**Instruction / Edit**
+
+- [black-forest-labs/FLUX.1-Kontext-dev](https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev) **(FLUX.1-Kontext-dev)**
 ---
+
+
 
 ## Links
 
