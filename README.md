@@ -318,7 +318,7 @@ All original commits preserved. Author credited. The original README can be foun
 **Image**
 
 - https://huggingface.co/black-forest-labs/FLUX.1-dev **(FLUX.1)**
-- 🐙 **This fork:** [github.com/OrakulStudio](https://github.com/OrakulStudio)
+- https://huggingface.co/black-forest-labs/FLUX.2-dev **(FLUX.2)**
 - 🤗 [huggingface.co/OrakulStorm](https://huggingface.co/OrakulStorm)
 - 🎨 [civitai.com/user/orakul_storm](https://civitai.com/user/ORAKUL_STUDIO)
 
