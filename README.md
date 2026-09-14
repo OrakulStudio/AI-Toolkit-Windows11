@@ -32,9 +32,9 @@ So yes, my code is written for Windows. And it runs. If anyone wants to port the
 
 
 
-**Contact and Support**
+**Contact and Support:**
 
-For questions regarding the proprietary memory management layer, integration nuances, or non-standard configurations, please email me at [orakulstorm@gmail.com].
+For questions regarding the proprietary memory management layer, integration nuances, or non-standard configurations, please email me at   orakulstorm@gmail.com
 
 *Orakul Studio - Chernihiv, Ukraine 🇺🇦*
 
