@@ -30,6 +30,12 @@ So yes, my code is written for Windows. And it runs. If anyone wants to port the
 
 ⚠️ Nevertheless, Linux support for the specialized Viking Engine is under active development.
 
+
+
+**Contact and Support**
+
+For questions regarding the proprietary memory management layer, integration nuances, or non-standard configurations, please email me at [orakulstorm@gmail.com].
+
 *Orakul Studio - Chernihiv, Ukraine 🇺🇦*
 
 ---
