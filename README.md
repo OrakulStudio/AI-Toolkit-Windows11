@@ -1,5 +1,5 @@
 # AI-Toolkit - Viking Engine 
-[![DOI](https://zenodo.org/badge/1262383269.svg)](https://doi.org/10.5281/zenodo.22700107)
+[![DOI](https://img.shields.io/badge/doi.org/10.5281/zenodo.22700108-blue.svg)](https://doi.org/10.5281/zenodo.22700108)
 
 **High-performance LoRA training on RTX 4090** 
 
