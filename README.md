@@ -337,6 +337,8 @@ All original commits preserved. Author credited. The original README can be foun
 **Instruction / Edit**
 
 - [black-forest-labs/FLUX.1-Kontext-dev](https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev) **(FLUX.1-Kontext-dev)**
+- [Qwen/Qwen-Image-Edit](https://huggingface.co/Qwen/Qwen-Image-Edit) **(Qwen-Image-Edit)**
+
 
 **Video**
 - [Wan-AI/Wan2.2-T2V-A14B-Diffusers](https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B-Diffusers) **(Wan 2.2 14B)**
