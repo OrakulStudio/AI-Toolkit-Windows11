@@ -329,6 +329,13 @@ All original commits preserved. Author credited. The original README can be foun
 **Instruction / Edit**
 
 - [black-forest-labs/FLUX.1-Kontext-dev](https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev) **(FLUX.1-Kontext-dev)**
+
+**Video**
+- [Wan-AI/Wan2.2-T2V-A14B-Diffusers](https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B-Diffusers) **(Wan 2.2 14B)**
+- [Wan-AI/Wan2.2-I2V-A14B-Diffusers](https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B-Diffusers) **(Wan 2.2 I2V 14B)**
+- [Wan-AI/Wan2.2-TI2V-5B-Diffusers](https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B-Diffusers) **(Wan 2.2 TI2V 5B)**
+- [Lightricks/LTX-2](https://huggingface.co/Lightricks/LTX-2) **(LTX-2)**
+ 
 ---
 
 
