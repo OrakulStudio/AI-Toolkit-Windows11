@@ -310,7 +310,7 @@ This fork exists because ostris built something worth building on.
 ostris/ai-toolkit is the most widely used open-source LoRA training framework. Thousands of people use it daily. It's clean, flexible, actively maintained.
 
 All original commits preserved. Author credited. The original README can be found in README_OSTRIS.md.
-
+---
 
 ```
 
