@@ -34,7 +34,7 @@ So yes, my code is written for Windows. And it runs. If anyone wants to port the
 
 **Contact and Support:**
 
-For questions regarding the proprietary memory management layer, integration nuances, or non-standard configurations, please email me at   [orakulstorm@gmail.com](https://mail.google.com/mail/u/0/#inbox)
+For questions regarding the proprietary memory management layer, integration nuances, or non-standard configurations, please email me at   [orakulstorm@gmail.com](mailto:orakulstorm@gmail.com)
 
 *Orakul Studio - Chernihiv, Ukraine 🇺🇦*
 
