@@ -338,6 +338,8 @@ All original commits preserved. Author credited. The original README can be foun
 
 - [black-forest-labs/FLUX.1-Kontext-dev](https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev) **(FLUX.1-Kontext-dev)**
 - [Qwen/Qwen-Image-Edit](https://huggingface.co/Qwen/Qwen-Image-Edit) **(Qwen-Image-Edit)**
+- [HiDream-ai/HiDream-E1-1](https://huggingface.co/HiDream-ai/HiDream-E1-1) **(HiDream E1)**
+
 
 
 **Video**
