@@ -23,6 +23,8 @@
 
 ## Logs: [HYPER-SPEED 17.09.2026](https://github.com/OrakulStudio/AI-Toolkit-Windows11/blob/main/Flux2D_Logs_yaml_17.09.2026/r1280f2aivazovsky.txt)
 
+## Configuration file: [yaml]()
+
 **AI-Toolkit (Windows 11)** is a user-friendly, high-performance toolkit designed for training diffusion models on consumer-grade hardware. 
 
 Built upon the open-source AI-Toolkit framework, this version has been extensively re-engineered to deliver server-grade training speeds and exceptional VRAM efficiency within the Windows 11 environment.
