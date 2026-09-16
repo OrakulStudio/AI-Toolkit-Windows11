@@ -21,8 +21,7 @@
 * **PCIe Bottleneck Bypass:** Lowering `layer_offloading_transformer_percent` to `0.65` kept critical matrices inside GDDR6X, removing GPU stall states.
 * **Zero-OOM Latent Cache Clearing:** Async RAM/VRAM cache clearing prevents memory leak spikes during step checkpoint saves.
 
-## Logs: 
-[HYPER-SPEED 17.09.2026](https://github.com/OrakulStudio/AI-Toolkit-Windows11/blob/main/Flux2D_Logs_yaml_17.09.2026/r1280f2aivazovsky.txt)
+## Logs: [HYPER-SPEED 17.09.2026](https://github.com/OrakulStudio/AI-Toolkit-Windows11/blob/main/Flux2D_Logs_yaml_17.09.2026/r1280f2aivazovsky.txt)
 
 **AI-Toolkit (Windows 11)** is a user-friendly, high-performance toolkit designed for training diffusion models on consumer-grade hardware. 
 
