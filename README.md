@@ -1,4 +1,4 @@
-[r1280f2aivazovsky.txt](https://github.com/user-attachments/files/32311994/r1280f2aivazovsky.txt)# AI-Toolkit - Viking Engine 
+# AI-Toolkit - Viking Engine 
 [![DOI](https://img.shields.io/badge/DOI.org/10.5281/zenodo.22700108-blue.svg?style=flat&logo=doi)](https://doi.org/10.5281/zenodo.22700108)
 
 **High-performance LoRA training on RTX 4090** 
