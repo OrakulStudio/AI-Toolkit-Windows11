@@ -17,6 +17,14 @@
 | **Power Consumption** | ~280–350W | **~136W (FP8 E5M2 Efficiency)** |
 | **VRAM Stability** | High Risk / OOM on Checkpoints | **Zero OOM (Manual Latent Cache Eviction)** |
 
+> [!IMPORTANT]
+> ⚡ **CRITICAL PERFORMANCE NOTE: TRANSFORMER OFFLOAD RATIO**
+>
+> * **Ranks from 32 to 1024 (Standard & High-Rank):** Always set `offload = 0.75` *(Golden Ratio)*. This provides the ultimate balance between VRAM utilization and PCIe bus throughput (~6.5s/it).
+> * **Rank 1280 (Extreme 8B Parameter LoRA):** Switch `offload = 0.65`. Keeping an extra 10% of transformer blocks directly in VRAM circumvents the severe PCIe bus bottleneck for massive adapter matrices, unlocking peak training speed (~39s/it).
+> 
+> *Do not use `0.65` for low/medium ranks, as it causes VRAM fragmentation and PCIe queueing.*
+
 #### 🔑 Key Engineering Highlights:
 * **PCIe Bottleneck Bypass:** Lowering `layer_offloading_transformer_percent` to `0.65` kept critical matrices inside GDDR6X, removing GPU stall states.
 * **Zero-OOM Latent Cache Clearing:** Async RAM/VRAM cache clearing prevents memory leak spikes during step checkpoint saves.
