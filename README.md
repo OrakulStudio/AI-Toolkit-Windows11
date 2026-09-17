@@ -26,6 +26,15 @@
 > 
 > *Do not use `0.65` for low/medium ranks, as it causes VRAM fragmentation and PCIe queueing.*
 
+
+> [!IMPORTANT]
+> ⚡ **КРИТИЧЕСКИ ВАЖНО: НАСТРОЙКА TRANSFORMER OFFLOAD RATIO**
+>
+> * **Ранги от 32 до 1024 (Стандарт):** Строго **`0.75`** *(Golden Ratio)*. Обеспечивает идеальный баланс VRAM и шины PCIe, отдавая стабильные **~6.5s на шаг**.
+> * **Ранг 1280 (Экстремальный 8B LoRA):** Переключайте на **`0.65`**. Удержание ключевых слоёв базовой модели в VRAM полностью снимает пробки на шине PCIe при вычислении гигантских матриц адаптера, выбивая скорость **~39s на шаг**.
+> 
+> *Внимание: Не используйте `0.65` для стандартных рангов (128–512) — это вызовет фрагментацию VRAM и лишние микропростои шины.*
+
 #### 🔑 Key Engineering Highlights:
 * **PCIe Bottleneck Bypass:** Lowering `layer_offloading_transformer_percent` to `0.65` kept critical matrices inside GDDR6X, removing GPU stall states.
 * **Zero-OOM Latent Cache Clearing:** Async RAM/VRAM cache clearing prevents memory leak spikes during step checkpoint saves.
