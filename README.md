@@ -17,7 +17,7 @@
 | **Power Consumption** | ~280–350W | **~136W (FP8 E5M2 Efficiency)** |
 | **VRAM Stability** | High Risk / OOM on Checkpoints | **Zero OOM (Manual Latent Cache Eviction)** |
 
-> [!IMPORTANT]
+> [!IMPORTANT]**EN**
 > ⚡ **CRITICAL PERFORMANCE NOTE: TRANSFORMER OFFLOAD RATIO**
 >
 > * **Ranks from 32 to 1024 (Standard & High-Rank):** Always set `offload = 0.75` *(Golden Ratio)*. This provides the ultimate balance between VRAM utilization and PCIe bus throughput (~6.5s/it).
