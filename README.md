@@ -12,7 +12,7 @@
 | Parameter | Standard / Default | Orakul Optimized |
 | :--- | :--- | :--- |
 | **LoRA Rank** | 128 / 256 | **1280 (Extreme Density)** |
-| **Iteration Speed** | ~144–180s / step | **~39–40s / step** |
+| **Iteration Speed** | ~65–70s / step | **~39–40s / step** |
 | **Transformer Offload** | 0.75 – 0.85 | **0.65 (PCIe Bottleneck Bypass)** |
 | **Power Consumption** | ~280–350W | **~136W (FP8 E5M2 Efficiency)** |
 | **VRAM Stability** | High Risk / OOM on Checkpoints | **Zero OOM (Manual Latent Cache Eviction)** |
