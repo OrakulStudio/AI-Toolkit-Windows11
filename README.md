@@ -18,6 +18,7 @@
 | **VRAM Stability** | High Risk / OOM on Checkpoints | **Zero OOM (Manual Latent Cache Eviction)** |
 
 > [!IMPORTANT]
+> ## EN
 > ⚡ **CRITICAL PERFORMANCE NOTE: TRANSFORMER OFFLOAD RATIO**
 >
 > * **Ranks from 32 to 1024 (Standard & High-Rank):** Always set `offload = 0.75` *(Golden Ratio)*. This provides the ultimate balance between VRAM utilization and PCIe bus throughput (~6.5s/it).
