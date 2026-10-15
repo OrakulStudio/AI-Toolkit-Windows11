@@ -165,9 +165,6 @@ Metrics in screenshots
 
 ---
 
-
----
-
 ---
 
 ## Test
