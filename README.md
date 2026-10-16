@@ -201,6 +201,7 @@ Metrics in screenshots
 
 ---
 
+## Logs
 
 **Rank 128 @ 512x512 / 1024x1024 Recovery Log (`offload: 0.71`):**
 
