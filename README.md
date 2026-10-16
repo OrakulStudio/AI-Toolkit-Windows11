@@ -201,7 +201,25 @@ Metrics in screenshots
 
 ---
 
-#### 📸 Logs
+
+**Rank 128 @ 512x512 / 1024x1024 Recovery Log (`offload: 0.71`):**
+
+Set offload to 0.65 | Rank 128 at 1024x1024
+[Log](https://github.com/OrakulStudio/FLUX2-RANK-2048/blob/main/Offload%20Benchmarks/1024x1024/Rank128-dataset1024x1024-ofload-0.65.txt)
+## 1024x1024
+
+| | 
+|---|
+![R128 1204x1024](https://github.com/OrakulStudio/FLUX2-RANK-2048/blob/main/Offload%20Benchmarks/1024x1024/1024x1024.png) |
+
+
+Set offload to 0.71 | Rank 128 at 512x512
+[Log](https://github.com/OrakulStudio/FLUX2-RANK-2048/blob/main/Offload%20Benchmarks/512x512/Log_Rank128-dataset512x512-ofload-0.71.txt)
+### 512x512
+
+| | 
+|---|
+![R128 512x512](https://github.com/OrakulStudio/FLUX2-RANK-2048/blob/main/Offload%20Benchmarks/512x512/512x512.png) |
 
 
 > **TL;DR:** Do not run `low_vram` alongside custom asynchronous offloaders. Set `low_vram: false` and `offload: 0.71` in Viking Engine to train 12B FLUX2 models at Rank 2048 on consumer hardware with zero bottlenecks.
