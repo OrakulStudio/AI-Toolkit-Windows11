@@ -577,12 +577,6 @@ pip install "numpy<2.0.0" scipy --force-reinstall
 ---
 
 Configs go in viking_train/ folder.
-
-What Ostris Built
-This fork exists because ostris built something worth building on.
-ostris/ai-toolkit is the most widely used open-source LoRA training framework. Thousands of people use it daily. It's clean, flexible, actively maintained.
-
-All original commits preserved. Author credited. The original README can be found in README_OSTRIS.md.
 ---
 
 ```
@@ -622,7 +616,6 @@ All original commits preserved. Author credited. The original README can be foun
 
 ## Links
 
-- 🐙 **Original:** [ostris/ai-toolkit](https://github.com/ostris/ai-toolkit)
 - 🐙 [github.com/OrakulStudio](https://github.com/OrakulStudio)
 - 🤗 [huggingface.co/OrakulStorm](https://huggingface.co/OrakulStorm)
 - 🎨 [civitai.com/user/orakul_studio](https://civitai.com/user/ORAKUL_STUDIO)
