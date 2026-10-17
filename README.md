@@ -262,7 +262,7 @@ Set offload to 0.71 | Rank 128 at 512x512
 > * **Ранги от 32 до 1024 (Стандарт):** Строго **`0.75`** *(Golden Ratio)*. Обеспечивает идеальный баланс VRAM и шины PCIe, отдавая стабильные **~6.5s на шаг**.
 > * **Ранг 1280 (Экстремальный 8B LoRA):** Переключайте на **`0.65`**. Удержание ключевых слоёв базовой модели в VRAM полностью снимает пробки на шине PCIe при вычислении гигантских матриц адаптера, выбивая скорость **~39s на шаг**.
 > 
-> *Внимание: Не используйте `0.65` для стандартных рангов (128–512) — это вызовет фрагментацию VRAM и лишние микропростои шины.*
+> *Внимание: Не используйте `0.65` для стандартных рангов (128–512)  это вызовет фрагментацию VRAM и лишние микропростои шины.*
 
 #### 🔑 Key Engineering Highlights:
 * **PCIe Bottleneck Bypass:** Lowering `layer_offloading_transformer_percent` to `0.65` kept critical matrices inside GDDR6X, removing GPU stall states.
@@ -386,7 +386,7 @@ Also: CPU pinned memory for direct DMA from DRAM without CPU cache copy.
 
 ---
 
-### [toolkit/quantize.py](https://github.com/OrakulStudio/AI-Toolkit-Viking-Engine-Fork/blob/main/toolkit/util/quantize.py) — Protocol Oracle-60
+### [toolkit/quantize.py](https://github.com/OrakulStudio/AI-Toolkit-Viking-Engine-Fork/blob/main/toolkit/util/quantize.py)  Protocol Orakul-60
 **Native FP8 (E5M2) for Ada Lovelace + CPU pre-quantization.**
 
 RTX 4090 has native FP8 Tensor Cores. This activates them.  
@@ -425,7 +425,7 @@ self.scale = alpha_val / self.lora_dim
 
 ---
 
-### [toolkit/network_mixins.py](https://github.com/OrakulStudio/AI-Toolkit-Viking-Engine-Fork/blob/main/toolkit/network_mixins.py) — Oracle-60 Alpha Fix
+### [toolkit/network_mixins.py](https://github.com/OrakulStudio/AI-Toolkit-Viking-Engine-Fork/blob/main/toolkit/network_mixins.py)  Orakul-60 Alpha Fix
 **The alpha skip bug that corrupted high-rank training.**
 
 Lines that skipped `.alpha` keys for non-LoKR networks are permanently commented with explanation. The `lora_special.py` autopilot handles scale correctly now.
@@ -442,7 +442,7 @@ Lines that skipped `.alpha` keys for non-LoKR networks are permanently commented
 ### [toolkit/style.py](https://github.com/OrakulStudio/AI-Toolkit-Viking-Engine-Fork/blob/main/toolkit/style.py) — Perceptual Loss (Rewritten)
 **VGG19 perceptual loss without the VRAM leak.**
 
-Original had a critical bug: VGG19 was computing gradients for itself during perceptual loss calculation — wasting gigabytes of VRAM on a frozen reference network.
+Original had a critical bug: VGG19 was computing gradients for itself during perceptual loss calculation  wasting gigabytes of VRAM on a frozen reference network.
 
 Fixed:
 ```python
@@ -451,7 +451,7 @@ for param in cnn.parameters():
     param.requires_grad = False
 ```
 
-Also: Gram matrix calculation replaced with hardware `torch.bmm` (Batch Matrix Multiply) — faster, cleaner, no nested function overhead.
+Also: Gram matrix calculation replaced with hardware `torch.bmm` (Batch Matrix Multiply)  faster, cleaner, no nested function overhead.
 
 **Use perceptual loss for:** Aivazovsky, watercolor, oil painting, charcoal, any artistic style where brushstroke texture matters more than pixel accuracy.
 
@@ -459,7 +459,7 @@ Also: Gram matrix calculation replaced with hardware `torch.bmm` (Batch Matrix M
 
 ---
 
-### [toolkit/timer.py](https://github.com/OrakulStudio/AI-Toolkit-Viking-Engine-Fork/blob/main/toolkit/timer.py) — Timer Silenced
+### [toolkit/timer.py](https://github.com/OrakulStudio/AI-Toolkit-Viking-Engine-Fork/blob/main/toolkit/timer.py)  Timer Silenced
 **CPU overhead from time polling eliminated.**
 
 Original timer called `time.time()` on every micro-step of the pipeline — `predict_unet`, `backward`, `optimizer_step`, etc. Parasitic CPU load, log spam, potential micro-freeze points on PCIe bus under heavy load.
@@ -481,11 +481,11 @@ Result: cleaner logs, lower CPU load, stable PCIe bus under sustained training.
 
 ---
 
-### [jobs/process/BaseSDTrainProcess.py](https://github.com/OrakulStudio/AI-Toolkit-Viking-Engine-Fork/blob/main/jobs/process/BaseSDTrainProcess.py) — bf16 Forcing
+### [jobs/process/BaseSDTrainProcess.py](https://github.com/OrakulStudio/AI-Toolkit-Viking-Engine-Fork/blob/main/jobs/process/BaseSDTrainProcess.py)  bf16 Forcing
 **Network forced to bfloat16 before training starts.**
 
 ```python
-# Viking method — before network.apply_to()
+# Viking method  before network.apply_to()
 # todo switch everything to proper mixed precision like this  ← ostris left this todo
 self.network.force_to(self.device_torch, dtype=torch.bfloat16)
 ```
@@ -513,7 +513,7 @@ content_or_style: style
 loss_type: perceptual
 ```
 
-Switch between modes by commenting/uncommenting — no config rewrite needed.
+Switch between modes by commenting/uncommenting  no config rewrite needed.
 
 ---
 
@@ -530,7 +530,7 @@ network:
   lokr_factor: -1
 
 model:
-  qtype: bf8            # Oracle-60 native FP8
+  qtype: bf8            # Orakul-60 native FP8
   quantize_te: true
   qtype_te: bf8
   layer_offloading: true
@@ -542,7 +542,7 @@ model:
 ## Launch
 
 Web UI works but **sampling is disabled for maximum speed**.  
-For real performance — terminal only:
+For real performance  terminal only:
 
 ```bash
 # Activate environment
@@ -558,7 +558,7 @@ Configs go in `viking_train/` folder.
 
 ## Installation & Requirements
 
-- RTX 4090 (24 GB) — optimized for Ada Lovelace sm_89
+- RTX 4090 (24 GB)  optimized for Ada Lovelace sm_89
 - 64+ GB RAM recommended (128 GB for rank 1280)
 - Python 3.10+ / Linux or Windows 11
 
@@ -623,7 +623,7 @@ All original commits preserved. Author credited. The original README can be foun
 ## Links
 
 - 🐙 **Original:** [ostris/ai-toolkit](https://github.com/ostris/ai-toolkit)
-- 🐙 **This fork:** [github.com/OrakulStudio](https://github.com/OrakulStudio)
+- 🐙 [github.com/OrakulStudio](https://github.com/OrakulStudio)
 - 🤗 [huggingface.co/OrakulStorm](https://huggingface.co/OrakulStorm)
 - 🎨 [civitai.com/user/orakul_studio](https://civitai.com/user/ORAKUL_STUDIO)
 
