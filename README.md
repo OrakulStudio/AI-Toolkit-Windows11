@@ -274,13 +274,8 @@ Set offload to 0.71 | Rank 128 at 512x512
 
 **AI-Toolkit (Windows 11)** is a user-friendly, high-performance toolkit designed for training diffusion models on consumer-grade hardware. 
 
-Built upon the open-source AI-Toolkit framework, this version has been extensively re-engineered to deliver server-grade training speeds and exceptional VRAM efficiency within the Windows 11 environment.
+Built upon the  AI-Toolkit framework, this version has been extensively re-engineered to deliver server-grade training speeds and exceptional VRAM efficiency within the Windows 11 environment.
 *Server-class speed on consumer hardware*
-
-> Based on [ostris/ai-toolkit](https://github.com/ostris/ai-toolkit) - the original author's work is the foundation of everything here. All original commits preserved.
->
-> Why Orakul Studio is Windows Native
-Many people are used to thinking that "serious" development and AI belong on Linux. But if you look under the hood of any popular operating system, you'll see an endless series of workarounds, emulation attempts, and compromises.
 
 We don't compromise.
 
@@ -418,7 +413,7 @@ All Linear and Conv2d LoRA layers initialized directly in bf16. Half the memory 
 Original code skipped `.alpha` keys during save, causing **64× signal drop** at rank 1024 with alpha 64. Fixed and locked:
 
 ```python
-# === ORACLE STANDART PASS (FIXED) ===
+# === ORAkul STANDART PASS (FIXED) ===
 alpha_val = alpha if alpha is not None and alpha != 0 else lora_dim
 self.scale = alpha_val / self.lora_dim
 ```
@@ -431,7 +426,7 @@ self.scale = alpha_val / self.lora_dim
 Lines that skipped `.alpha` keys for non-LoKR networks are permanently commented with explanation. The `lora_special.py` autopilot handles scale correctly now.
 
 ```python
-# === [ORACLE-60] BLOCK: ЗАЩИТА ОТ МЫЛА ===
+# === [ORAkul-60] BLOCK: ЗАЩИТА ОТ МЫЛА ===
 # These lines skipped Alpha for all types except LoKR.
 # At Rank 1024, signal dropped 64x (Scale 16/1024 instead of 64/1024).
 # KEEP DISABLED  lora_special.py autopilot handles this correctly.
@@ -611,7 +606,6 @@ Configs go in viking_train/ folder.
 - [Lightricks/LTX-2](https://huggingface.co/Lightricks/LTX-2) **(LTX-2)**
  
 ---
-
 
 
 ## Links
