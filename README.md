@@ -50,7 +50,7 @@ training:
 
 > **Note for lower-end GPUs:** This configuration has been tested and optimized for the RTX 4090. For GPUs with less VRAM, these parameters will require individual testing. ---
 
-## 🛠️ WHAT’S NEW IN V2.2?
+## 🛠️ WHAT’S NEW IN V2.1?
 
 ### 1. 🚫 Complete Removal of Web-UI (Gradio / Streamlit)
 We have **completely stripped out the web interface**. Say goodbye to memory-hungry browser UIs, freezing, and unnecessary CPU/VRAM overhead. The system now operates 100% autonomously, running locally and at maximum speed directly from the console.
