@@ -28,7 +28,7 @@ low_vram: false  # DISABLED: Low-VRAM mode turned off for maximum FPS
 
 All commands should be executed sequentially from the repository's root directory.
 
-#### Step 1. Activate the virtual environment
+Step 1. Activate the virtual environment
 ```bash
 source venv/Scripts/activate
 
