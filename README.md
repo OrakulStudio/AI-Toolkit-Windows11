@@ -108,6 +108,39 @@ Metrics in screenshots
 ---
 
 
+## Supported Models
+**Image**
+
+- [black-forest-labs/flux-3-image-klein-base](https://huggingface.co/black-forest-labs/flux-3-image-klein-base) **(FLUX.3 Image Klein)**
+- [black-forest-labs/FLUX.1-dev](https://huggingface.co/black-forest-labs/FLUX.1-dev) **(FLUX.1)**
+- [black-forest-labs/FLUX.2-dev](https://huggingface.co/black-forest-labs/FLUX.2-dev) **(FLUX.2)**
+- [black-forest-labs/FLUX.2-klein-base-4B](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-4B) **(FLUX.2-klein-base-4B)**
+- [black-forest-labs/FLUX.2-klein-base-9B](https://huggingface.co/black-forest-labs/FLUX.2-klein-base-9B) **(FLUX.2-klein-base-9B)**
+- [stabilityai/stable-diffusion-xl-base-1.0](https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0) **(SDXL)**
+- [HiDream-ai/HiDream-I1-Full](https://huggingface.co/HiDream-ai/HiDream-I1-Full) **(HiDream I1)**
+- [Qwen/Qwen-Image](https://huggingface.co/Qwen/Qwen-Image) **(Qwen-Image)**
+- [Tongyi-MAI/Z-Image](https://huggingface.co/Tongyi-MAI/Z-Image) **(Z-Image)**
+- [Tongyi-MAI/Z-Image-Turbo](https://huggingface.co/Tongyi-MAI/Z-Image-Turbo) **(Z-Image Turbo)**
+- [lodestones/Chroma1-Base](https://huggingface.co/lodestones/Chroma1-Base/tree/main/transformer) **(Chroma)**
+- [OmniGen2/OmniGen2](https://huggingface.co/OmniGen2/OmniGen2) **(OmniGen2)**
+
+**Instruction / Edit**
+
+- [black-forest-labs/FLUX.1-Kontext-dev](https://huggingface.co/black-forest-labs/FLUX.1-Kontext-dev) **(FLUX.1-Kontext-dev)**
+- [Qwen/Qwen-Image-Edit](https://huggingface.co/Qwen/Qwen-Image-Edit) **(Qwen-Image-Edit)**
+- [HiDream-ai/HiDream-E1-1](https://huggingface.co/HiDream-ai/HiDream-E1-1) **(HiDream E1)**
+
+
+
+**Video**
+- [Wan-AI/Wan2.2-T2V-A14B-Diffusers](https://huggingface.co/Wan-AI/Wan2.2-T2V-A14B-Diffusers) **(Wan 2.2 14B)**
+- [Wan-AI/Wan2.2-I2V-A14B-Diffusers](https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B-Diffusers) **(Wan 2.2 I2V 14B)**
+- [Wan-AI/Wan2.2-TI2V-5B-Diffusers](https://huggingface.co/Wan-AI/Wan2.2-TI2V-5B-Diffusers) **(Wan 2.2 TI2V 5B)**
+- [Lightricks/LTX-2](https://huggingface.co/Lightricks/LTX-2) **(LTX-2)**
+ 
+---
+
+
 
 ---
 
