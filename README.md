@@ -433,13 +433,13 @@ Not about making weak hardware work. About making strong hardware **fly**.
 ---
 ---
 ## Benchmark - Flux2-dev, RTX 4090, Rank 128
-[orakul_report_folder_logs](https://github.com/OrakulStudio/AI-Toolkit-Windows11/tree/main/orakul_report)
+[orakul_report_folder_logs](https://github.com/OrakulStudio/FLUX2-RANK-2048/tree/main/Offload%20Benchmarks/orakul_report)
 
-<img width="3840" height="2160" alt="10" src="https://github.com/user-attachments/assets/b9e5c210-ac1a-4d96-b142-d0611de913f1" />
-<img width="3840" height="2160" alt="3" src="https://github.com/user-attachments/assets/c107b7e7-ed27-485b-a449-28507ba0afef" />
-<img width="3840" height="2160" alt="8" src="https://github.com/user-attachments/assets/ac55b44c-bb40-404c-99f7-ac6ba547469c" />
+<img width="3840" height="2160" alt="10" src="https://github.com/OrakulStudio/FLUX2-RANK-2048/raw/main/Offload%20Benchmarks/orakul_report/10.png" />
+<img width="3840" height="2160" alt="3" src="https://github.com/OrakulStudio/FLUX2-RANK-2048/blob/main/Offload%20Benchmarks/orakul_report/3.png" />
+<img width="3840" height="2160" alt="8" src="https://github.com/OrakulStudio/FLUX2-RANK-2048/blob/main/Offload%20Benchmarks/orakul_report/8.png" />
 
-[orakul_report.txt](https://github.com/OrakulStudio/AI-Toolkit-Windows11/blob/main/orakul_report/orakul_report.txt)
+[orakul_report.txt](https://github.com/OrakulStudio/FLUX2-RANK-2048/blob/main/Offload%20Benchmarks/orakul_report/orakul_report.txt)
 
 
 ## Benchmark - Flux2-dev, RTX 4090, Rank 512
