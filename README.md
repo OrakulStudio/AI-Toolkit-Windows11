@@ -44,6 +44,23 @@ python run.py viking_train/r128f3kleintest.yaml 2>&1 | tee "Log_r128f3kleintest.
 `2>&1 | tee "Log_....txt"` duplicates all console output into a text log file in real time.
 
 
+git clone https://github.com/OrakulStudio/ai-toolkit.git
+cd ai-toolkit
+python -m venv venv
+.\venv\Scripts\activate
+pip install --no-cache-dir torch==2.9.1 torchvision==0.24.1 torchaudio==2.9.1 --index-url https://download.pytorch.org/whl/cu128
+pip install -r requirements.txt
+
+If you encounter numpy.dtype errors or CUDA/Triton warnings, use the following commands to ensure your environment is set up correctly for high-performance training:
+
+Fix NumPy/SciPy version conflicts:
+pip install "numpy<2.0.0" scipy --force-reinstall
+---
+
+Configs go in viking_train/ folder.
+---
+
+
 training:
 # Ready-to-use configuration templates with the correct flags are available in the /viking_train folder
 ```
