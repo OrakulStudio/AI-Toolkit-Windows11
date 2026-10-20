@@ -3,7 +3,7 @@
 ---
 
 > [!IMPORTANT]
-> # 🚀 ORAKUL STUDIO V2.2 MAJOR UPDATE
+> # 🚀 ORAKUL STUDIO V2.1 MAJOR UPDATE
 > ### Complete Architectural Overhaul | Maximum Speed ​​| Clean Terminal
 >
 > **Orakul Studio Toolkit** has transitioned to an entirely new, custom-built training core! We have unlocked peak performance on GPUs like the **RTX 4090 (24GB)** and higher.
