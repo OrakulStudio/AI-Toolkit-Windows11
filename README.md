@@ -56,7 +56,7 @@ The entire logic for memory management and file streaming has been rewritten fro
 Over the coming month, this new, high-speed custom core will be progressively integrated into all other supported model architectures (including **Flux.2**, **SDXL**, and more). *Screenshots of actual logs and confirmation of a speed of 1.5s/it are included in the release materials on GitHub.*
 
 
-
+---
 ---
 
 
