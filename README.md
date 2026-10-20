@@ -1,6 +1,62 @@
 # AI-Toolkit - Viking Engine 
 [![DOI](https://img.shields.io/badge/DOI.org/10.5281/zenodo.22700108-blue.svg?style=flat&logo=doi)](https://doi.org/10.5281/zenodo.22700108)
 ---
+
+> [!IMPORTANT]
+> # 🚀 ORAKUL STUDIO V2.2 MAJOR UPDATE
+> ### Complete Architectural Overhaul | Maximum Speed ​​| Clean Terminal
+>
+> **Orakul Studio Toolkit** has transitioned to an entirely new, custom-built training core! We have unlocked peak performance on GPUs like the **RTX 4090 (24GB)** and higher.
+>
+> ⚡ **Training speed for Flux.3 image-klein-base:** up to **~1.5 seconds per iteration** (`1.5s/it`) using full weights with no latency or VRAM leaks!
+
+---
+
+## ⚠️ CRITICAL YAML SETTINGS
+
+To achieve maximum speed on 24GB+ GPUs (RTX 4090 and more powerful), you **MUST** disable all legacy memory-saving workarounds in your `.yaml` configuration file:
+
+```yaml
+# ========================================================
+# ORAKUL STUDIO v2.2 - OPTIMAL FLUX.3 CONFIGURATION
+# ========================================================
+engine:
+offload: false   # DISABLED: Model stays entirely in VRAM; no offloading to CPU
+low_vram: false  # DISABLED: Low-VRAM mode turned off for maximum FPS
+
+training:
+# Ready-to-use configuration templates with the correct flags are available in the /viking_train folder
+```
+
+> **Note for lower-end GPUs:** This configuration has been tested and optimized for the RTX 4090. For GPUs with less VRAM, these parameters will require individual testing. ---
+
+## 🛠️ WHAT’S NEW IN V2.2?
+
+### 1. 🚫 Complete Removal of Web-UI (Gradio / Streamlit)
+We have **completely stripped out the web interface**. Say goodbye to memory-hungry browser UIs, freezing, and unnecessary CPU/VRAM overhead. The system now operates 100% autonomously, running locally and at maximum speed directly from the console.
+
+### 2. 📊 Full Telemetry in the Progress Bar
+Essential technical data is now displayed in real-time within the progress bar:
+* **Current GPU voltage** and **operating frequency (MHz)**.
+* Instantaneous **Loss** value.
+* **System announcements:** Get notifications about system updates directly in your terminal perfect for those who don’t check GitHub often.
+
+### 3. 📈 Orakul Viking Monitor (`RUN_MONITOR.bat`)
+If a digital Loss readout in the console isn’t enough for you, launch the visual monitor!
+* A graph with **EMA (Exponential Moving Average) smoothing** lets you track convergence phases and stop the training process before overfitting occurs.
+* Launch it with a **single click** using the `RUN_MONITOR.bat` file no need to manually type commands into the CLI.
+
+### 4. ⚡ Custom-Built Core
+The entire logic for memory management and file streaming has been rewritten from scratch. The code is proprietary and optimized to achieve record-breaking speeds.
+
+---
+
+## 🛣️ ROADMAP
+
+Over the coming month, this new, high-speed custom core will be progressively integrated into all other supported model architectures (including **Flux.2**, **SDXL**, and more). *Screenshots of actual logs and confirmation of a speed of 1.5s/it are included in the release materials on GitHub.*
+
+
+
 ---
 
 
