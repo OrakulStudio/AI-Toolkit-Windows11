@@ -35,6 +35,15 @@ source venv/Scripts/activate
 Step 2. Starting the training process with logs output to a file
 python run.py viking_train/r128f3kleintest.yaml 2>&1 | tee "Log_r128f3kleintest.txt"
 
+####[!NOTE]
+
+`source venv/Scripts/activate` activates an isolated Python environment.
+
+`python run.py ...` initiates training based on the specified `.yaml` configuration file.
+
+`2>&1 | tee "Log_....txt"` duplicates all console output into a text log file in real time.
+
+
 training:
 # Ready-to-use configuration templates with the correct flags are available in the /viking_train folder
 ```
