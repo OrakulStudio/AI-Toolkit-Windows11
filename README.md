@@ -77,6 +77,21 @@ Over the coming month, this new, high-speed custom core will be progressively in
 
 
 ---
+
+
+---
+
+## 
+
+| | | |
+|---|---|---|
+Metrics in screenshots
+![1](https://github.com/OrakulStudio/FLUX2-RANK-2048/blob/main/Offload%20Benchmarks/Flux2-klein-base-logs-images/1.png) | ![2](https://github.com/OrakulStudio/FLUX2-RANK-2048/blob/main/Offload%20Benchmarks/Flux2-klein-base-logs-images/2.png) | ![3](https://github.com/OrakulStudio/FLUX2-RANK-2048/blob/main/Offload%20Benchmarks/Flux2-klein-base-logs-images/3.png) |
+
+---
+
+
+
 ---
 
 
