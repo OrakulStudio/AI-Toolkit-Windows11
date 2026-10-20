@@ -18,11 +18,22 @@ To achieve maximum speed on 24GB+ GPUs (RTX 4090 and more powerful), you **MUST*
 
 ```yaml
 # ========================================================
-# ORAKUL STUDIO v2.2 - OPTIMAL FLUX.3 CONFIGURATION
+# ORAKUL STUDIO v2.1 - OPTIMAL FLUX.3 CONFIGURATION
 # ========================================================
 engine:
 offload: false   # DISABLED: Model stays entirely in VRAM; no offloading to CPU
 low_vram: false  # DISABLED: Low-VRAM mode turned off for maximum FPS
+
+### 🚀 Step-by-step guide to starting training
+
+All commands should be executed sequentially from the repository's root directory.
+
+#### Step 1. Activate the virtual environment
+```bash
+source venv/Scripts/activate
+
+Step 2. Starting the training process with logs output to a file
+python run.py viking_train/r128f3kleintest.yaml 2>&1 | tee "Log_r128f3kleintest.txt"
 
 training:
 # Ready-to-use configuration templates with the correct flags are available in the /viking_train folder
