@@ -42,8 +42,16 @@ python run.py viking_train/r128f3kleintest.yaml 2>&1 | tee "Log_r128f3kleintest.
 `python run.py ...` initiates training based on the specified `.yaml` configuration file.
 
 `2>&1 | tee "Log_....txt"` duplicates all console output into a text log file in real time.
+=========================================================================================================
+Note for Windows Users:
+Do not use 2>&1 | tee inside native PowerShell or CMD. PowerShell's Tee-Object mutates \r carriage returns into newlines, ruining tqdm progress bars.
 
+Recommended Launch Methods:
 
+Git Bash / WSL2: python run.py ... 2>&1 | tee Log.txt (works correctly)
+
+PowerShell (Direct): Run python run.py ... without shell redirection, or pass logging via Python/YAML config.
+============================================================================================================
 git clone https://github.com/OrakulStudio/ai-toolkit.git
 cd ai-toolkit
 python -m venv venv
@@ -59,16 +67,6 @@ pip install "numpy<2.0.0" scipy --force-reinstall
 
 Configs go in viking_train/ folder.
 ---
-
-Note for Windows Users:
-Do not use 2>&1 | tee inside native PowerShell or CMD. PowerShell's Tee-Object mutates \r carriage returns into newlines, ruining tqdm progress bars.
-
-Recommended Launch Methods:
-
-Git Bash / WSL2: python run.py ... 2>&1 | tee Log.txt (works correctly)
-
-PowerShell (Direct): Run python run.py ... without shell redirection, or pass logging via Python/YAML config.
-
 training:
 # Ready-to-use configuration templates with the correct flags are available in the /viking_train folder
 ```
