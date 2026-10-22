@@ -118,6 +118,8 @@ A universal, real-time matrix diagnostic engine that inspects the internal struc
 3. **Beyond Standard Loss Curves:** Captures internal weight collapse, rank degradation, and overtraining long before visual artifacts appear in samples.
 
 ---
+![SVD ALERT](https://github.com/OrakulStudio/FLUX2-RANK-2048/blob/main/Offload%20Benchmarks/SVD%20Health%20Monitor/22.png)
+
 
 ## 🛣️ ROADMAP
 
