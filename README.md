@@ -92,6 +92,29 @@ If a digital Loss readout in the console isn’t enough for you, launch the visu
 ### 4. ⚡ Custom-Built Core
 The entire logic for memory management and file streaming has been rewritten from scratch. The code is proprietary and optimized to achieve record-breaking speeds.
 
+### 5. 🧬 SVD Health Monitor & Critical Alert System
+
+A universal, real-time matrix diagnostic engine that inspects the internal structural geometry ($W = U \Sigma V^T$) of LoRA weights live during training. Compatible with **all ranks** (from Rank 8 up to Rank 2048+) and **any model architecture** (FLUX.1/2/3, Z-Image, HighDream, Video models, etc.).
+
+---
+
+### 📊 Diagnostic Parameters & Live Indicators
+
+| Parameter | Type | Description |
+| :--- | :--- | :--- |
+| **`Layer [lora_down / lora_up]`** | Core Target | Separately evaluates the down-projection ($A$) and up-projection ($B$) weight matrices. |
+| **`Active Axes`** | Health Status | Measures live rank utilization. Displays `(STABLE)` when feature dimensions remain healthy and active. |
+| **`Dominant Feature (Max SVD)`** | Capacity Value | Tracks the maximum singular value ($\sigma_{\max}$) to monitor weight saturation and structural balance. |
+| **`[!] SVD ALERT`** | **Critical Warning** | **Automated Early Warning System.** Triggers high-priority visual alerts (`critical changes at step X!`) instantly upon detecting gradient spikes, rank degradation, or structural shifts. |
+
+---
+
+### ⚡ Why It Matters
+
+1. **Automated Gradient Explosion Prevention:** The `[!] SVD ALERT` system immediately flags weight instabilities and gradient spikes at the exact step they occur, preventing hours of wasted GPU compute before the loss graph even reflects the issue.
+2. **Universal Compatibility:** Operates identically across all rank configurations (from lightweight Rank 16 to extreme Rank 2048) and any generative architecture (Image, Video, Multimodal).
+3. **Beyond Standard Loss Curves:** Captures internal weight collapse, rank degradation, and overtraining long before visual artifacts appear in samples.
+
 ---
 
 ## 🛣️ ROADMAP
