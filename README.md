@@ -108,6 +108,7 @@ A universal, real-time matrix diagnostic engine that inspects the internal struc
 | **`[!] SVD ALERT`** | **Critical Warning** | **Automated Early Warning System.** Triggers high-priority visual alerts (`critical changes at step X!`) instantly upon detecting gradient spikes, rank degradation, or structural shifts. |
 
 ---
+[SVD Health Monitor](https://github.com/OrakulStudio/FLUX2-RANK-2048/blob/main/Offload%20Benchmarks/SVD%20Health%20Monitor/11.png)
 
 ### ⚡ Why It Matters
 
