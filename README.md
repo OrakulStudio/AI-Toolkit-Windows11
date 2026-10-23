@@ -140,7 +140,10 @@ The training is proceeding correctly; the remaining "excess" vectors are simply 
 ## 🚨 What should you do if an "[!] SVD ALERT" appears? 
 If a red warning appears in the console—"[!] SVD ALERT: 
 critical changes at the step X!" do not panic, and do not immediately cancel the training. 
-Instead, run the `monitor.py` script and examine the Loss graph: 
+1. Open the `monitor.py` file.
+2. On **line 13**, specify the name of your `.txt` log file:
+LOG_FILE = "your_log.txt"
+and examine the Loss graph: 
 If the Loss value is trending steadily downward, everything is fine; the model has simply reorganized its vectors to accommodate a new element in the dataset. 
 If the Loss value spikes toward infinity, a "gradient explosion" has occurred, and you should stop the training.
 
@@ -148,11 +151,6 @@ If the Loss value spikes toward infinity, a "gradient explosion" has occurred, a
 
 Over the coming month, this new, high-speed custom core will be progressively integrated into all other supported model architectures (including **Flux.2**, **SDXL**, and more). *Screenshots of actual logs and confirmation of a speed of 1.5s/it are included in the release materials on GitHub.*
 
-
----
-
-
----
 
 ## 
 
