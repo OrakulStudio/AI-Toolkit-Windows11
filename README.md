@@ -84,10 +84,10 @@ Essential technical data is now displayed in real-time within the progress bar:
 * Instantaneous **Loss** value.
 * **System announcements:** Get notifications about system updates directly in your terminal perfect for those who don’t check GitHub often.
 
-### 3. 📈 Orakul Viking Monitor (`RUN_MONITOR.bat`)
+### 3. 📈 Orakul Viking Monitor (`MONITOR.py`)
 If a digital Loss readout in the console isn’t enough for you, launch the visual monitor!
 * A graph with **EMA (Exponential Moving Average) smoothing** lets you track convergence phases and stop the training process before overfitting occurs.
-* Launch it with a **single click** using the `RUN_MONITOR.bat` file no need to manually type commands into the CLI.
+* Launch it with a **single click** using the `MONITOR.py` file no need to manually type commands into the CLI.
 
 ### 4. ⚡ Custom-Built Core
 The entire logic for memory management and file streaming has been rewritten from scratch. The code is proprietary and optimized to achieve record-breaking speeds.
