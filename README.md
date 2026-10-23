@@ -120,6 +120,29 @@ A universal, real-time matrix diagnostic engine that inspects the internal struc
 ---
 ![SVD ALERT](https://github.com/OrakulStudio/FLUX2-RANK-2048/blob/main/Offload%20Benchmarks/SVD%20Health%20Monitor/22.png)
 
+### 📊 Understanding the SVD Health Monitor (How to read the logs)
+
+At startup and during training, the console displays 4 lines showing the status of the LoRA matrices:
+
+```text
+[SVD HEALTH MONITOR | Initial Baseline]
+-> Layer [lora_down]: Active Axes = 128/128 | Dominant Feature (Max SVD) = 0.6617
+-> Layer [lora_up]:   Active Axes = 128/128 | Dominant Feature (Max SVD) = 0.5185  <-- IMPORTANT POINT
+-> Layer [lora_down]: Active Axes = 128/128 | Dominant Feature (Max SVD) = 0.6562
+-> Layer [lora_up]:   Active Axes = 128/128 | Dominant Feature (Max SVD) = 0.3558
+```
+## 🔑 Key information for the user: 
+The "Layer [lora_up]" line (the second line) is your primary indicator of efficiency. 
+Regarding "Active Axes = X/Y": If your rank is set to 128 and it shows "128/128," the model is utilizing 100% of the vectors. 
+If your rank is set to 128 but it shows "20/128," this is NOT an error. 
+It simply means that, for the given task, the model only requires 20 vectors. 
+The training is proceeding correctly; the remaining "excess" vectors are simply not being utilized. 
+## 🚨 What should you do if an "[!] SVD ALERT" appears? 
+If a red warning appears in the console—"[!] SVD ALERT: 
+critical changes at the step X!" do not panic, and do not immediately cancel the training. 
+Instead, run the `monitor.py` script and examine the Loss graph: 
+If the Loss value is trending steadily downward, everything is fine; the model has simply reorganized its vectors to accommodate a new element in the dataset. 
+If the Loss value spikes toward infinity, a "gradient explosion" has occurred, and you should stop the training.
 
 ## 🛣️ ROADMAP
 
