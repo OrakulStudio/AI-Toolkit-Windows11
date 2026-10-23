@@ -138,7 +138,7 @@ If your rank is set to 128 but it shows "20/128," this is NOT an error.
 It simply means that, for the given task, the model only requires 20 vectors. 
 The training is proceeding correctly; the remaining "excess" vectors are simply not being utilized. 
 ## 🚨 What should you do if an "[!] SVD ALERT" appears? 
-If a red warning appears in the console—"[!] SVD ALERT: 
+If a red warning appears in the console "[!] SVD ALERT: 
 critical changes at the step X!" do not panic, and do not immediately cancel the training. 
 1. Open the `monitor.py` file.
 2. On **line 13**, specify the name of your `.txt` log file:
