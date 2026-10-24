@@ -2145,7 +2145,7 @@ class SDTrainer(BaseSDTrainProcess):
                     
                 # 2. Авария только по делу
                 if has_alarm:
-                    print(f"\n[!] SVD ALERT: critical changes at the step {self._svd_step_counter}!")
+                    print(f"\n\033[1;31m[!] SVD ALERT: critical changes at the step {self._svd_step_counter}!\033[0m")
                     print("\n".join(summary_parts))
                     print("-" * 65)
             # --- Конец SVD Рентгена ---
