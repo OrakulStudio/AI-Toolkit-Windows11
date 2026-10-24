@@ -833,8 +833,11 @@ Configs go in viking_train/ folder.
 - 🤗 [huggingface.co/OrakulStorm](https://huggingface.co/OrakulStorm)
 - 🎨 [civitai.com/user/orakul_studio](https://civitai.com/user/ORAKUL_STUDIO)
 
-```
+ ## 📜 License
 
+This project is licensed under the **MIT License**  free for personal and commercial use. See the [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://members.opensource.org/user/roman-nykonov) file for details.
+
+```
 
 *The smell of the iron is stable. 🦊⚡*
 
