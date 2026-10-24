@@ -159,6 +159,7 @@ We have integrated a zero-config, fool-proof synchronization module (`updater.py
   * `dataset/` (Training datasets & images)
   * `output/` (Checkpoints, LoRA weights & logs)
   * `venv/` (Python virtual environment)
+  * `__pycache__/` (Python bytecode execution cache)
 * **Real-Time Terminal Interface**: Displays formatted changelogs, commit hashes, and real-time unpack progress directly in the console.
 
 ---
