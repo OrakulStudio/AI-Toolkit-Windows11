@@ -147,10 +147,6 @@ and examine the Loss graph:
 If the Loss value is trending steadily downward, everything is fine; the model has simply reorganized its vectors to accommodate a new element in the dataset. 
 If the Loss value spikes toward infinity, a "gradient explosion" has occurred, and you should stop the training.
 
-## 🛣️ ROADMAP
-
-Over the coming month, this new, high-speed custom core will be progressively integrated into all other supported model architectures (including **Flux.2**, **SDXL**, and more). *Screenshots of actual logs and confirmation of a speed of 1.5s/it are included in the release materials on GitHub.*
-
 
 ## 🔄 One-Click Auto-Updater & Synchronization
 
@@ -171,6 +167,13 @@ We have integrated a zero-config, fool-proof synchronization module (`updater.py
 1. **API Handshake**: Performs a lightweight 2-second commit hash check against `OrakulStudio/AI-Toolkit-Windows11`.
 2. **Version Diff & Changelog**: If an update is detected, it renders an ASCII banner and changelog panel before asking for user confirmation (`y/n`).
 3. **Isolated Extraction**: Downloads the fresh repository archive to a temporary system directory, safely swapping core engine files while leaving all isolated user directories completely untouched.
+
+
+
+## 🛣️ ROADMAP
+
+Over the coming month, this new, high-speed custom core will be progressively integrated into all other supported model architectures (including **Flux.2**, **SDXL**, and more). *Screenshots of actual logs and confirmation of a speed of 1.5s/it are included in the release materials on GitHub.*
+
 
 ## 
 
