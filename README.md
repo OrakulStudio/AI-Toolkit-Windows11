@@ -3,12 +3,12 @@
 ---
 
 > [!IMPORTANT]
-> # 🚀 ORAKUL STUDIO V2.1 MAJOR UPDATE
+> #  ORAKUL STUDIO V2.1 MAJOR UPDATE
 > ### Complete Architectural Overhaul | Maximum Speed ​​| Clean Terminal
 >
 > **Orakul Studio Toolkit** has transitioned to an entirely new, custom-built training core! We have unlocked peak performance on GPUs like the **RTX 4090 (24GB)** and higher.
 >
-> ⚡ **Training speed for Flux.3 image-klein-base:** up to **~1.5 seconds per iteration** (`1.5s/it`) using full weights with no latency or VRAM leaks!
+>  **Training speed for Flux.3 image-klein-base:** up to **~1.5 seconds per iteration** (`1.5s/it`) using full weights with no latency or VRAM leaks!
 
 ---
 
@@ -24,7 +24,7 @@ engine:
 offload: false   # DISABLED: Model stays entirely in VRAM; no offloading to CPU
 low_vram: false  # DISABLED: Low-VRAM mode turned off for maximum FPS
 
-### 🚀 Step-by-step guide to starting training
+###  Step-by-step guide to starting training
 
 All commands should be executed sequentially from the repository's root directory.
 
@@ -73,9 +73,9 @@ training:
 
 > **Note for lower-end GPUs:** This configuration has been tested and optimized for the RTX 4090. For GPUs with less VRAM, these parameters will require individual testing. ---
 
-## 🛠️ WHAT’S NEW IN V2.1?
+## 🛠️WHAT’S NEW IN V2.1?
 
-### 1. 🚫 Complete Removal of Web-UI (Gradio / Streamlit)
+### 1.  Complete Removal of Web-UI (Gradio / Streamlit)
 We have **completely stripped out the web interface**. Say goodbye to memory-hungry browser UIs, freezing, and unnecessary CPU/VRAM overhead. The system now operates 100% autonomously, running locally and at maximum speed directly from the console.
 
 ### 2. 📊 Full Telemetry in the Progress Bar
@@ -89,7 +89,7 @@ If a digital Loss readout in the console isn’t enough for you, launch the visu
 * A graph with **EMA (Exponential Moving Average) smoothing** lets you track convergence phases and stop the training process before overfitting occurs.
 * Launch it with a **single click** using the `MONITOR.py` file no need to manually type commands into the CLI.
 
-### 4. ⚡ Custom-Built Core
+### 4.  Custom-Built Core
 The entire logic for memory management and file streaming has been rewritten from scratch. The code is proprietary and optimized to achieve record-breaking speeds.
 
 ### 5. 🧬 SVD Health Monitor & Critical Alert System
@@ -111,7 +111,7 @@ A universal, real-time matrix diagnostic engine that inspects the internal struc
 ![SVD Health Monitor](https://github.com/OrakulStudio/FLUX2-RANK-2048/blob/main/Offload%20Benchmarks/SVD%20Health%20Monitor/33.png)
 ![SVD Health Monitor](https://github.com/OrakulStudio/FLUX2-RANK-2048/blob/main/Offload%20Benchmarks/SVD%20Health%20Monitor/11.png)
 
-### ⚡ Why It Matters
+###  Why It Matters
 
 1. **Automated Gradient Explosion Prevention:** The `[!] SVD ALERT` system immediately flags weight instabilities and gradient spikes at the exact step they occur, preventing hours of wasted GPU compute before the loss graph even reflects the issue.
 2. **Universal Compatibility:** Operates identically across all rank configurations (from lightweight Rank 16 to extreme Rank 2048) and any generative architecture (Image, Video, Multimodal).
