@@ -572,6 +572,8 @@ class MossImageModel(BaseModel):
         state_dict = super().convert_lora_weights_before_save(state_dict)
         out = {}
         for key, value in state_dict.items():
+            if key.startswith("transformer."):
+                key = "diffusion_model." + key[len("transformer."):]
             base, sep, suffix = key.partition(".proj.qkv.")
             if not sep:
                 out[key] = value
@@ -586,6 +588,10 @@ class MossImageModel(BaseModel):
         return out
 
     def convert_lora_weights_before_load(self, state_dict):
+        state_dict = {
+            ("transformer." + k[len("diffusion_model."):] if k.startswith("diffusion_model.") else k): v
+            for k, v in state_dict.items()
+        }
         state_dict = super().convert_lora_weights_before_load(state_dict)
         out = dict(state_dict)
         down_keys = [
