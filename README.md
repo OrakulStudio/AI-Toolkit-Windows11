@@ -3,6 +3,36 @@
 ---
 
 > [!IMPORTANT]
+> **Fix for LoRA keys for MOSS-Image (ComfyUI)**
+>
+> In the initial commit adding support for **MOSS-Image (Base)**, LoRA weights were saved with the prefix `transformer.` instead of `diffusion_model.`. As a result, ComfyUI would skip these layers during loading (triggering a `[WARNING] lora key not loaded` message).
+>
+> This issue in `moss_image.py` has now been resolved; all new training runs will save the weights correctly. If you have already trained a LoRA using an earlier commit, there is **no need** to retrain the model. Simply create a file named `fix_moss_lora.py` locally, paste the code below into it, run the script (`python fix_moss_lora.py`), and drag your `.safetensors` file into the terminal window. A corrected version, named `*_fixed.safetensors`, will be generated in the same directory. >
+> ```python
+>import os
+> import sys
+> import safetensors.torch as st
+> from safetensors import safe_open
+>
+> src = sys.argv[1].strip('"') if len(sys.argv) > 1 else input("Drag & drop .safetensors file and press Enter: ").strip().strip('"')
+> dst = os.path.splitext(src)[0] + "_fixed.safetensors"
+>
+> with safe_open(src, framework="pt", device="cpu") as f:
+> metadata = f.metadata() or {}
+>
+> tensors = st.load_file(src, device="cpu")
+> fixed_tensors = {
+> ("diffusion_model." + k[len("transformer."):] if k.startswith("transformer.") else k): v
+> for k, v in tensors.items()
+> }
+>
+> st.save_file(fixed_tensors, dst, metadata=metadata)
+> print(f"\nDone! Saved fixed LoRA to:\n{dst}")
+> ```
+
+
+
+> [!IMPORTANT]
 > ## Update v2.2  Python 3.12 (`venv_312`) & MOSS-Image Support
 > 
 > ### What's New
