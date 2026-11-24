@@ -235,6 +235,7 @@ Metrics in screenshots
 - [Tongyi-MAI/Z-Image-Turbo](https://huggingface.co/Tongyi-MAI/Z-Image-Turbo) **(Z-Image Turbo)**
 - [lodestones/Chroma1-Base](https://huggingface.co/lodestones/Chroma1-Base/tree/main/transformer) **(Chroma)**
 - [OmniGen2/OmniGen2](https://huggingface.co/OmniGen2/OmniGen2) **(OmniGen2)**
+- [OpenMOSS-Team/MOSS-Image-Base](https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base) **(MOSS-Image Base)**
 
 **Instruction / Edit**
 
@@ -843,6 +844,7 @@ Configs go in viking_train/ folder.
 - [Tongyi-MAI/Z-Image-Turbo](https://huggingface.co/Tongyi-MAI/Z-Image-Turbo) **(Z-Image Turbo)**
 - [lodestones/Chroma1-Base](https://huggingface.co/lodestones/Chroma1-Base/tree/main/transformer) **(Chroma)**
 - [OmniGen2/OmniGen2](https://huggingface.co/OmniGen2/OmniGen2) **(OmniGen2)**
+- [OpenMOSS-Team/MOSS-Image-Base](https://huggingface.co/OpenMOSS-Team/MOSS-Image-Base) **(MOSS-Image Base)**
 
 **Instruction / Edit**
 
