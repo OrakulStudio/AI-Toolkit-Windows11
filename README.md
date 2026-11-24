@@ -3,6 +3,40 @@
 ---
 
 > [!IMPORTANT]
+> ## Update v2.2  Python 3.12 (`venv_312`) & MOSS-Image Support
+> 
+> ### What's New
+> - **Single Python 3.12 Environment (`venv_312`)**: Standardized training setup on `venv_312` using `uv`, keeping your system Python (such as 3.10) untouched.
+> - **MOSS-Image & Transformers 5.x**: Added full LoRA training support for MOSS-Image (`transformers==5.24.0`).
+> - **Compatibility & Stability Fixes**: Updated import handling and fallbacks across model modules (`ltx2`, `moss_image`, Flux / Klein, and related files) so new and existing workflows coexist cleanly.
+> - **Updater & Launcher Sync**: Updated `update_toolkit.bat` and `updater.py` (`exclude_items` and changelog) to target `venv_312`.
+
+### Upgrading from Previous Versions
+If you previously used an older `venv` (for example on Python 3.10):
+
+1. Remove the old `venv` folder if no longer needed (or keep your system Python as-is).
+2. Create a fresh `venv_312` environment on Python 3.12 using `uv`:
+
+```bash
+uv venv venv_312 --python 3.12
+```
+
+3. Activate `venv_312`, install PyTorch for your GPU/CUDA setup, and install dependencies from `requirements.txt`:
+
+```bash
+# Windows (PowerShell / CMD)
+.\venv_312\Scripts\activate
+# or Git Bash
+source venv_312/Scripts/activate
+
+uv pip install --no-cache-dir -r requirements.txt
+```
+
+4. Run `update_toolkit.bat` or `updater.py`  `venv_312`, `output`, `dataset`/`datasets`, `viking_train`, and `config.json` are excluded from overwrite during updates.
+
+
+
+> [!IMPORTANT]
 > # 🚀 ORAKUL STUDIO V2.1 MAJOR UPDATE
 > ### Complete Architectural Overhaul | Maximum Speed ​​| Clean Terminal
 >

@@ -9,6 +9,7 @@ from .flux2 import Flux2Model, Flux2Klein4BModel, Flux2Klein9BModel
 from .z_image import ZImageModel
 from .ltx2 import LTX2Model 
 from .flux3 import Flux3Model
+from .moss_image import MossImageModel
 
 AI_TOOLKIT_MODELS = [
     # put a list of models here
@@ -31,4 +32,5 @@ AI_TOOLKIT_MODELS = [
     Flux2Klein4BModel,
     Flux2Klein9BModel,
     Flux3Model,
+    MossImageModel,
 ]

@@ -37,9 +37,17 @@ from transformers import (
 )
 from toolkit.models.size_agnostic_feature_encoder import SAFEImageProcessor, SAFEVisionModel
 
-from transformers import ViTHybridImageProcessor, ViTHybridForImageClassification
+try:
+    from transformers import ViTHybridImageProcessor, ViTHybridForImageClassification
+except ImportError:
+    ViTHybridImageProcessor = None
+    ViTHybridForImageClassification = None
 
-from transformers import ViTFeatureExtractor, ViTForImageClassification
+from transformers import ViTForImageClassification
+try:
+    from transformers import ViTFeatureExtractor
+except ImportError:
+    from transformers import ViTImageProcessor as ViTFeatureExtractor
 
 import torch.nn.functional as F
 

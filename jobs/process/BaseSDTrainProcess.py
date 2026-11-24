@@ -19,8 +19,13 @@ from safetensors.torch import save_file, load_file
 from torch.utils.data import DataLoader
 import torch
 import torch.backends.cuda
-from huggingface_hub import HfApi, Repository, interpreter_login
-from huggingface_hub.utils import HfFolder
+from huggingface_hub import HfApi, interpreter_login
+try:
+    from huggingface_hub import Repository
+    from huggingface_hub.utils import HfFolder
+except ImportError:
+    Repository = None
+    HfFolder = None
 from toolkit.memory_management import MemoryManager
 
 from toolkit.basic import value_map

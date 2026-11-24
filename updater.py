@@ -56,8 +56,9 @@ def download_and_extract_full_repo(target_dir='.'):
     exclude_items = {
         'output',        
         'dataset',       
-        'viking_train',  
-        'venv',          
+        'datasets',
+        'viking_train',            
+        'venv_312',
         '.git',          
         'config.json',   
         '__pycache__'    
@@ -131,15 +132,14 @@ def print_banner():
 
 def draw_whats_new():
     changelog = (
-        '[bold cyan]ℹ️ WHAT`S NEW (v2.1):[/bold cyan]\n\n'
-        '  [bold]— Orakul Viking Engine v2.1 —[/bold]\n'
-        '  Custom-built training core. Speed up to ~1.5s/it.\n\n'
-        '  [bold]— SVD Health Monitor & ALERT System —[/bold]\n'
-        '  Visual matrix monitor and gradient explosion prevention system.\n\n'
-        '  [bold]— CLI-First / No WebUI —[/bold]\n'
-        '  Complete removal of Web-UI (Gradio/Streamlit) for maximum VRAM savings.\n\n'
-        '  [bold]— Bare-Metal Configs —[/bold]\n'
-        '  Full weights support (offload: false, low_vram: false) to unlock peak performance on RTX 4090.'
+        '[bold cyan]ℹ️ WHAT`S NEW (v2.2):[/bold cyan]\n\n'
+        '  [bold]— Python 3.12 Standard (venv_312) —[/bold]\n'
+        '  Moved to Python 3.12 (`venv_312`). Remove old 3.10 venv if present '
+        'and create `venv_312` via `uv`.\n\n'
+        '  [bold]— MOSS-Image & Existing Models —[/bold]\n'
+        '  Full LoRA training support for MOSS-Image while keeping existing models working.\n\n'
+        '  [bold]— Orakul Viking Engine Core —[/bold]\n'
+        '  Custom-built training core. Speed up to ~1.5s/it + SVD Health Monitor.'
     )
 
     console.print(
@@ -147,7 +147,7 @@ def draw_whats_new():
             changelog,
             title='[bold yellow]⚡ AI-TOOLKIT (Viking Engine)[/bold yellow]',
             title_align='left',
-            subtitle='[bold cyan]Update: v2.1.0[/bold cyan]',
+            subtitle='[bold cyan]Update: v2.2.0[/bold cyan]',
             subtitle_align='right',
             border_style='cyan',
             expand=False,

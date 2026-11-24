@@ -30,10 +30,11 @@ try:
     )
     from diffusers.models.transformers import LTX2VideoTransformer3DModel
     from diffusers.pipelines.ltx2.export_utils import encode_video
-    from transformers import (
-        Gemma3ForConditionalGeneration,
-        GemmaTokenizerFast,
-    )
+    from transformers import Gemma3ForConditionalGeneration
+    try:
+        from transformers import GemmaTokenizerFast
+    except ImportError:
+        from transformers import GemmaTokenizer as GemmaTokenizerFast
     from diffusers.pipelines.ltx2.vocoder import LTX2Vocoder
     from diffusers.pipelines.ltx2.connectors import LTX2TextConnectors
     from .convert_ltx2_to_diffusers import (

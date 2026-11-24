@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
 # --- НАСТРОЙКИ ---
-LOG_FILE = "Log_r128f3kleintest.txt"
+LOG_FILE = "log_r64f3animejirai.txt"
 UPDATE_MS = 3000  # Обновление каждые 3 секунды
 
 # --- ИНИЦИАЛИЗА ОКНА ---
