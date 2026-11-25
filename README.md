@@ -30,8 +30,8 @@
 > print(f"\nDone! Saved fixed LoRA to:\n{dst}")
 > ```
 
->[!INFO]
->Wat is SVD monitor and why I >implemented it
+
+>###Wat is SVD monitor and why I >implemented it
 
 ## 📊 SVD Health Monitor  Как читать вывод в консоли / How to Read Console Output
 
