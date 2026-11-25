@@ -30,6 +30,36 @@
 > print(f"\nDone! Saved fixed LoRA to:\n{dst}")
 > ```
 
+>[!IMPORTANT]
+>Wat is SVD monitor and why I >implemented it
+
+## 📊 SVD Health Monitor  Как читать вывод в консоли / How to Read Console Output
+
+Монитор в реальном времени показывает **эффективный ранг**  сколько выделенных осей (векторов внимания) нейросеть реально задействует под ваш датасет, а не просто «на бумаге» в конфиге.
+
+### Расшифровка строк / Line-by-Line Breakdown
+
+* **`-> Layer [lora_down]` (Строка 1 / Блок 1  Входная проекция / Input Projection)**
+  * **RU:** Сжатие входных признаков в пространство заданного ранга. На старте заполнено шумом, поэтому обычно показывает максимум (`128/128`).
+  * **EN:** Compresses input features into the target rank space. Initialized with noise, so it typically shows full capacity (`128/128`) from step 0.
+
+* **`-> Layer [lora_up]` (Строка 2 / Блок 1  Обучаемые векторы внимания / Trainable Attention Vectors)**
+  * **RU:** **Главный индикатор.** Показывает, сколько векторов внимания реально обучается и записывает стиль/персонажа в первом блоке сети. Если вы задали ранг `128`, а здесь потолок `35/128`  архитектура или датасет больше не требуют, повышать ранг выше `64` нет смысла.
+  * **EN:** **Primary metric.** Shows how many attention vectors are actively learning and writing style/character features in the first block. If you set rank `128` and this caps at `35/128`, the architecture/dataset has reached its intrinsic limit  raising the rank further won't add detail.
+
+* **`-> Layer [lora_down]` (Строка 3 / Блок 2  Входная проекция глубокого слоя / Deep Block Input)**
+  * **RU:** Входной захват признаков в более глубоком слое трансформера.
+  * **EN:** Input feature capture in a deeper transformer block.
+
+* **`-> Layer [lora_up]` (Строка 4 / Блок 2  Обучаемые векторы глубокого слоя / Deep Block Trainable Vectors)**
+  * **RU:** Количество обучаемых векторов внимания на глубоком уровне (отвечает за сложную композицию и тонкие детали). Часто раскрывается медленнее второго пункта (например, `99/128` → `104/128` по ходу обучения).
+  * **EN:** Number of active trainable vectors in the deeper layer (responsible for complex composition and fine details). Typically wakes up more gradually than line 2 during training.
+
+### Ключевые метрики / Key Metrics
+
+* **`Active Axes = X/Y`** — сколько сингулярных осей (`X`) из заданного в конфиге ранга (`Y`) реально работают.
+* **`Dominant Feature (Max SVD)`**  сила главного вектора (насколько плотно модель впитала основной стиль). Здоровый рабочий диапазон: **`0.5 – 1.5`**. Резкий скачок выше `2.0–2.5` сигнализирует о риске переобучения (пережатые цвета/артефакты).
+
 
 
 > [!IMPORTANT]
